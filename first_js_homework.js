@@ -132,7 +132,7 @@ For loops are useful when you know how many times you would like the loop to run
 
 What are the three components of the control panel? Each component is separated by a semicolon ;.
 
-The first part of the control panel is: initializates a loop counter
+The first part of the control panel is: initializes a loop counter
 The second part of the control panel is: the condition expression, if the condition is true the loop continues
 The third part of the control panel is:increases or decreases the value of the variable initalized in control panel 1
 */
@@ -152,3 +152,17 @@ for(i = 999; i >=0; i--){
 for(i = 1; i <= 10; i++){
     console.log("The value of i is "+ i);
 }
+
+const StarWars = ["Han", "C3PO", "R2D2", "Luke", "Leia", "Anakin"];
+
+//ITERATE OVER THE StarWars ARRAY AND PRINT EACH ELEMENT TO THE CONSOLE
+for(let character of StarWars){
+    console.log(character)
+}
+//ITERATE OVER THE StarWars ARRAY AGAIN AND PRINT EACH CHARACTERS NAME AS WELL AS THE VALUE OF i
+
+function logCharacter(character, index){
+    console.log(character, index)
+}
+
+StarWars.forEach(logCharacter);
